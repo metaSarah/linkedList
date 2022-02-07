@@ -50,7 +50,7 @@ def app_five(block_list):
     # priorBlockIndex = priorBlock.index
     
 
-    for x in range(0,4):
+    for x in range(0,5):
         priorBlock = block_list[len(block_list) - 1]
         newBlock = next_block(priorBlock)
         block_list.append(newBlock)
