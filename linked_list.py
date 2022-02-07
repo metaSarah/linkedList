@@ -35,8 +35,7 @@ def next_block(last_block):
     previous_hash = last_block.previous_hash
 
     newBlock = Block(index, timeStamp, content, previous_hash)
-    
-    newBlock.hash = newBlock.calc_hash(newBlock)
+    newBlock.hash = newBlock.calc_hash()
     return newBlock
     
 # append 5 blocks to the blockchain
