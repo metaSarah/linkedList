@@ -39,4 +39,19 @@ def next_block(last_block):
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    pass
+    
+    # find last block by iterating from genesis block
+    # index = 0
+    # while (block_list[index])
+
+    # listLength = len(block_list)
+    # priorBlockIndex = priorBlock.index
+    
+
+    for x in range(0,4):
+        priorBlock = block_list[len(block_list) - 1]
+        newBlock = next_block(priorBlock)
+        block_list.append(newBlock)
+
+
+    # pass
