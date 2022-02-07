@@ -32,7 +32,7 @@ def next_block(last_block):
     index = last_block.index + 1
     timeStamp = datetime.now()
     content = "this is block {}".format(index)
-    previous_hash = last_block.previous_hash
+    previous_hash = last_block.hash
 
     newBlock = Block(index, timeStamp, content, previous_hash)
     newBlock.hash = newBlock.calc_hash()
